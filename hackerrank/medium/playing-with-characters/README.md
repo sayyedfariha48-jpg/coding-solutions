@@ -1,4 +1,4 @@
-# "Hello World!" in C
+# Playing With Characters
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
@@ -49,7 +49,7 @@ The third line prints the sentence, $sen$.
 **Language:** C  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-14T17:25:57.907Z  
+**Submitted:** 2026-11-14T18:34:39.927Z  
 
 ```c
 #include <stdio.h>
@@ -59,12 +59,16 @@ The third line prints the sentence, $sen$.
 
 int main() 
 {
-	
-    char s[100];
-    scanf("%[^\n]%*c", s);
-  	
-    printf("Hello, World!\n");
-    printf("%s",s); 
+     char ch;
+     char s[100];
+     char sen[100];
+    scanf("%c", &ch );  
+    scanf("%s", s); 
+    scanf("\n");
+    scanf("%[^\n]%*c", sen);
+    printf("%c\n",ch);
+    printf("%s\n",s);
+    printf("%s",sen) ;
     return 0;
 }
 
